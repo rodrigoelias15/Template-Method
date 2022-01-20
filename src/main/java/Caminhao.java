@@ -1,16 +1,7 @@
 public abstract class Caminhao {
-    private String nome;
     private String marca;
     private float pesoCarga;
     private float pesoCaminhao;
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
 
     public String getMarca() {
         return marca;
@@ -40,17 +31,16 @@ public abstract class Caminhao {
         return (this.pesoCarga + this.pesoCaminhao);
     }
 
-    public abstract String verificarAprovadoViajar();
+    public abstract String verificarAprovadoParaViajar();
 
     public String getTipo() {
-        return "Carro";
+        return "Caminhao";
     }
 
     public String getInfo() {
         return getTipo() + "{" +
-                "nome=" + this.nome +
-                ", marca='" + this.marca + '\'' +
-                ", resultado=" + this.verificarAprovadoViajar() +
+                "marca='" + this.marca + '\'' +
+                ", resultado=" + this.verificarAprovadoParaViajar() +
                 '}';
     }
 

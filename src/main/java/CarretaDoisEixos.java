@@ -1,11 +1,11 @@
 public class CarretaDoisEixos extends Caminhao {
 
-    public String verificarAprovadoViajar() {
+    public String verificarAprovadoParaViajar() {
         if (this.calcularPesoBruto() <= 33) {
-            return "Aprovado";
+            return "Aprovado para viajar";
         }
         else {
-            return "Reprovado";
+            return "Reprovado para viajar";
         }
     }
 }
